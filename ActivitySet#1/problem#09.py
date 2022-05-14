@@ -1,3 +1,6 @@
-# Lists
-
-filename = "dataset/romeo.txt"
+fname=input('Enter the File name')
+nam=open(fname)
+wro=list()
+wro=nam.read().split()
+wro.sort()
+print(wro)
