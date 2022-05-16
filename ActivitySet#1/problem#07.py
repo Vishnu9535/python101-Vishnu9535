@@ -1,4 +1,4 @@
-def find():
+definition find():
      str = 'X-DSPAM-Confidence:0.8475'
      vis=str[19:25]
      man=float(vis)

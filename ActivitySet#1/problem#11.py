@@ -5,14 +5,18 @@ except:
     print('File cannot be opened:', fname)
     exit()
 counts=dict()
+man=list()
 for line in fhand :
     if line.startswith('From:'):
-        if line[6:] not in counts:
-            counts[line[6:]]=1
+        man=line.split()
+        if man[1] not in counts:
+            counts[man[1]]=1
         else:
-            counts[line[6:]]+=1
+            counts[man[1]]+=1
 words=counts.values()
 zam=max(words)
 for key in counts:
     if counts[key]==zam:
-        print(key, counts[key])
+        print(key,zam)
+        
+        
