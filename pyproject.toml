@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "repl_python3_python101-Vishnu9535-3"
+version = "0.1.0"
+description = ""
+authors = ["vishnukumar15 <<>>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+cchardet = "^2.1.7"
+html5lib = "^1.1"
+lxml = "^4.8.0"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
